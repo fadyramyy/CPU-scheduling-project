@@ -1,16 +1,80 @@
-# React + Vite
+# CPU Scheduling Web GUI
+## Round Robin vs SJF (Non-Preemptive)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the web-based GUI implementation for the Operating Systems CPU Scheduling Comparison Project.
 
-Currently, two official plugins are available:
+The application compares:
+- Round Robin (RR)
+- Shortest Job First (SJF - Non-Preemptive)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It provides:
+- Process input interface
+- Gantt chart visualization
+- Waiting Time (WT)
+- Turnaround Time (TAT)
+- Response Time (RT)
+- Comparison summaries
+- Input validation
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Technologies Used
+- React
+- Vite
+- JavaScript
+- HTML/CSS
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Installation & Run
+
+## Install Dependencies
+```bash
+npm install
+```
+
+## Start Development Server
+```bash
+npm run dev
+```
+
+Then open the local link shown in the terminal.
+
+---
+
+# Build Production Version
+```bash
+npm run build
+```
+
+The final production files will be generated inside:
+
+```text
+/dist
+```
+
+---
+
+# Project Structure
+
+```text
+src/        -> Application source code
+public/     -> Static assets
+dist/       -> Production build
+```
+
+---
+
+# Features
+- Dynamic process scheduling
+- Round Robin simulation
+- SJF simulation
+- Gantt charts
+- Metrics tables
+- Validation handling
+- Comparison analysis
+
+---
+
+# Author
+Operating Systems Course Project
