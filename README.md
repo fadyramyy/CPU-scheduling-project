@@ -52,4 +52,4 @@ Recommended:
 
 ## Option 1 — Run Main Python File
 ```bash
-python scheduler.py
+python src/scheduler.py
