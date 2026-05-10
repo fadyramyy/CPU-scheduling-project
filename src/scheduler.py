@@ -94,10 +94,10 @@ def run_round_robin(processes, quantum):
         in_queue.discard(pid)
         p = next(x for x in processes if x["pid"] == pid)
 
-        if pid not in first_run:
+        if pid not in first_run: #To calculate the response time
             first_run[pid] = t
 
-        run = min(remaining[pid], quantum)
+        run = min(remaining[pid], quantum) #see what is shorter 
         gantt.append((pid, t, t + run))
         t += run
         remaining[pid] -= run
