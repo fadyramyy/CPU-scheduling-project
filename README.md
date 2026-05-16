@@ -50,6 +50,6 @@ Recommended:
 
 # How to Run
 
-## Option 1 — Run Main Python File
+## Run Main Python File
 ```bash
 python src/scheduler.py
